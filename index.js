@@ -16,7 +16,7 @@ function getData() {
 const suite = new Benchmark.Suite;
 
 suite
-.add('concat', function(deferred) {
+.add('concat', function() {
 
   getData().reduce((acc, item) => {
     return acc.concat(item.items);
@@ -24,7 +24,7 @@ suite
 
 })
 
-.add('push.apply', function(deferred) {
+.add('push.apply', function() {
 
   getData().reduce((acc, item) => {
     Array.prototype.push.apply(acc, item.items);
@@ -33,7 +33,7 @@ suite
 
 })
 
-.add('push spread', function(deferred) {
+.add('push spread', function() {
 
   getData().reduce((acc, item) => {
     acc.push(...item.items);
