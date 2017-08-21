@@ -1,0 +1,15 @@
+{
+  "name": "benchmark-concat-vs-push",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "plasticut@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "colors": "^1.1.2"
+  }
+}
